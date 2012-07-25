@@ -15,6 +15,7 @@ Step By Step
 8. [Restart network services] (https://github.com/tulioseveriano/uClinux-with-Motorola-Coldfire-MCF5272/blob/master/README.md#8---restart-network-services)
 9. [Verify that the TFTP service is already running] (https://github.com/tulioseveriano/uClinux-with-Motorola-Coldfire-MCF5272/blob/master/README.md#9---verify-that-the-tftp-service-is-already-running)
 10. [Install MINICOM] (https://github.com/tulioseveriano/uClinux-with-Motorola-Coldfire-MCF5272/blob/master/README.md#10---install-minicom)
+11. [Recognizing the plate MOD5272 the TFTP server] (https://github.com/tulioseveriano/uClinux-with-Motorola-Coldfire-MCF5272/edit/master/README.md#11---recognizing-the-plate-mod5272-the-tftp-server)
 
 ### 1 - Download files in [http://www.uclinux.org/] (http://www.uclinux.org/)
 
@@ -91,5 +92,10 @@ Used to perform serial communication with the board
 
 #### Save Configuration as mod5272
 `Exit from Minicom`
+
+### 11 - Recognizing the plate MOD5272 the TFTP server
+It is recommended crossover cable connection to speed up the detection process
+
+    # arp -s 10.2.4.123 00:03:F4:01:1E:F0
 
 The End :)
