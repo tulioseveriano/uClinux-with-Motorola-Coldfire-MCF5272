@@ -67,7 +67,19 @@ To that TFTP is running as a service, every time the computer starts
 `udp        0      0 0.0.0.0:69              0.0.0.0:*                          4477/inetd`
 
 ### 10 - Install MINICOM
+Used to perform serial communication with the board
 
     # apt-get install minicom
+
+#### Configuring the Serial Port
+    # minicom -s mod5272
+
+    Baudrate = 9600
+    Serial port = /dev/ttyS0
+    Hardware Flow Control = No
+    Software Flow Control = No
+
+#### Save Configuration as mod5272
+`Exit from Minicom`
 
 The End :)
