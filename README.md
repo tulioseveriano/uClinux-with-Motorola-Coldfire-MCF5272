@@ -23,6 +23,9 @@ Step By Step
 
     m68k-elf-tools-20030314.sh
     uClinux-dist-20041215.tar.bz2
+[http://www.uclinux.org/pub/uClinux/m68k-elf-tools/m68k-elf-tools-20030314.sh](http://www.uclinux.org/pub/uClinux/m68k-elf-tools/m68k-elf-tools-20030314.sh)
+
+[http://www.uclinux.org/pub/uClinux/dist/uClinux-dist-20041215.tar.bz2](http://www.uclinux.org/pub/uClinux/dist/uClinux-dist-20041215.tar.bz2)
 
 ### 2 - Preparing the uClinux
     $ mkdir /comum
