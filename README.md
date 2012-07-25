@@ -86,6 +86,8 @@ Used to perform serial communication with the board
 #### Configuring the Serial Port
     # minicom -s mod5272
 
+Configuration
+
     Baudrate = 9600
     Serial port = /dev/ttyS0
     Hardware Flow Control = No
@@ -103,6 +105,8 @@ It is recommended crossover cable connection to speed up the detection process
 Reset development board if necessary
 
     $ minicom -o mod5272
+
+Result
 
     Netburner MOD-5272 (5272) Monitor V1.00 Sep 26 2003 13:57:32
     HELP for help
