@@ -17,6 +17,7 @@ Step By Step
 10. [Install MINICOM] (https://github.com/tulioseveriano/uClinux-with-Motorola-Coldfire-MCF5272/blob/master/README.md#10---install-minicom)
 11. [Recognizing the plate MOD5272 the TFTP server] (https://github.com/tulioseveriano/uClinux-with-Motorola-Coldfire-MCF5272/edit/master/README.md#11---recognizing-the-plate-mod5272-the-tftp-server)
 12. [Running MINICOM] (https://github.com/tulioseveriano/uClinux-with-Motorola-Coldfire-MCF5272/edit/master/README.md#12---running-minicom)
+13. [] ()
 
 ### 1 - Download files in [http://www.uclinux.org/] (http://www.uclinux.org/)
 
@@ -129,6 +130,20 @@ Configuration
     9.)Exceptions CauseReboot
     1-9 to change, S to save, X to exit
 
+### 13 - Finish And Run
+copy image to the /tftpboot
 
+    cp images/image.s19 /tftpboot/IMAGE.S19
+    minicom -o mod5272
+
+Reboot the board with RESET button
+
+Loads the image into RAM
+
+    ndl image.s19
+    
+Initializes the image that has already been preloaded
+
+    go 2020400
 
 The End :)
