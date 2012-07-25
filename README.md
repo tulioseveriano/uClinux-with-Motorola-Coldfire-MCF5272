@@ -145,8 +145,58 @@ Loads the image into RAM
 
     ndl image.s19
     
+Address boot file found in
+
+    $ mcedit linux-2.4.x/arch/m68knommu/platform/5272/MOD5272/ram.ld
+
 Initializes the image that has already been preloaded
 
     go 2020400
+
+#### Results of some commands
+
+ps
+
+    /> ps
+      PID PORT STAT SIZE SHARED %CPU COMMAND
+        1      S    141K     0K  0.8 /bin/init
+        2      S      0K     0K  0.0 keventd
+        3      R      0K     0K  0.0 ksoftirqd_CPU0
+        4      S      0K     0K  0.0 kswapd
+        5      S      0K     0K  0.0 bdflush
+        6      S      0K     0K  0.0 kupdated
+       18      S     41K     0K  0.0 portmap
+       19   S0 S     27K     0K  0.1 /bin/sh
+       20   S0 S     26K     0K  0.2 /bin/agetty 9600 ttyS1
+       31   S0 R     20K     0K  0.0 ps
+
+cat /proc/meminfo
+
+    />cat /proc/meminfo
+           total:    used:    free:  shared: buffers:  cached:
+    Mem:   6275072  1220608  5054464        0   151552   131072
+    Swap:        0        0        0
+    MemTotal:         6128 kB
+    MemFree:          4936 kB
+    MemShared:           0 kB
+    Buffers:           148 kB
+    Active:            180 kB
+    Inactive:           96 kB
+    HighTotal:           0 kB
+    HighFree:            0 kB
+    LowTotal:         6128 kB
+    LowFree:          4936 kB
+    SwapTotal:           0 kB
+    SwapFree:            0 kB
+
+cat /proc cpuinfo
+
+    /> cat /proc cpuinfo
+    CPU:            COLDFIRE(m5272)
+    MMU:            none
+    FPU:            none
+    Clocking:       59.2MHz
+    BogoMips:       39.52
+    Calibration:    19763200 loops
 
 The End :)
