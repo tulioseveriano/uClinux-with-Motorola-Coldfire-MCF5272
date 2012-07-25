@@ -5,6 +5,16 @@ uClinux with Motorola Coldfire MCF5272
 
 Step By Step
 ------------
+1. [Download files in http://www.uclinux.org/] (#1---download-files-in-httpwwwuclinuxorg)
+2. [Preparing the uClinux] (#2---preparing-the-uclinux)
+3. [Installation] (#3---installation)
+4. [Uncompress] (#4---uncompress)
+5. [Compile uClinux] (#5---compile-uclinux)
+6. [Install TFTPD] (#6---install-tftpd)
+7. [Edit the file /etc/inetd.conf] (#7---edit-the-file-etcinetdconf)
+8. [Restart network services] (#8---restart-network-services)
+9. [Verify that the TFTP service is already running] (#9---verify-that-the-tftp-service-is-already-running)
+10. [Install MINICOM] (#10---install-minicom)
 
 ### 1 - Download files in [http://www.uclinux.org/] (http://www.uclinux.org/)
 
