@@ -43,11 +43,9 @@ Kernel Configuration
 --------------------
 There was an error of no Library
 
-`kurumin@ltr03:/comum/uclinux/uClinux-dist$ apt-get install libncurses5-dev`
-
 Solving the problem
 
-    $ apt-get install libncurses5-dev
+    kurumin@ltr03:/comum/uclinux/uClinux-dist$ apt-get install libncurses5-dev
 
 Continuing
 
@@ -111,5 +109,26 @@ Result
     Netburner MOD-5272 (5272) Monitor V1.00 Sep 26 2003 13:57:32
     HELP for help
     nb>
+
+#### Set the development board
+Use the setup command
+
+    nb>setup
+    
+Configuration
+
+    MAC address=00-03-F4-01-1E-F0
+    1.)IP Address =10.2.4.123
+    2.)IP Mask    =255.255.0.0
+    3.)IP Gateway =10.2.0.1
+    4.)TFTP Server=10.2.8.181
+    5.)TFTP File  =
+    6.)Baudrate  =9600
+    7.)Wait      =1
+    8.)Boot to Monitor
+    9.)Exceptions CauseReboot
+    1-9 to change, S to save, X to exit
+
+
 
 The End :)
